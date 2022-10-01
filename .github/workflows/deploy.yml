@@ -53,7 +53,7 @@ jobs:
       - name: Generate deployment package
         run: |
           mkdir -p deploy
-          cp build/libs/beanstalk-0.0.1-SNAPSHOT deploy/application.jar
+          cp build/libs/beanstalk-0.0.1-SNAPSHOT.jar deploy/application.jar
           cp Procfile deploy/Procfile
           cp -r .ebextensions deploy/.ebextensions
           cp -r .platform deploy/.platform
